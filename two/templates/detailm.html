@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+    {% block content %}
+
+    <div class="container jumbotron">
+        <h1>{{ two.title }}</h1>
+        <p>평점 : {{ two.score }}</p>
+        <p>{{ two.pub_date }}</p>
+        <p>{{ two.body }}</p>
+    </div>
+    <a href = "{% url 'movie' %}" button type="button" class="btn btn-warning">MOVIE 메인으로</a>
+
+{% endblock %}

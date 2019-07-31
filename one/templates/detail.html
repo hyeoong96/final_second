@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+    {% block content %}
+
+    <div class="container jumbotron">
+        <h1>{{ one.title }}</h1>
+        <p>평점 : {{ one.score }}</p>
+        <p>{{ one.pub_date }}</p>
+        <p>{{ one.body }}</p>
+    </div>
+    <a href = "{% url 'book' %}" button type="button" class="btn btn-warning">BOOK 메인으로</a>
+
+{% endblock %}
